@@ -1,0 +1,77 @@
+.PerformanceInsights{
+    width: 100vw;
+}
+.PerformanceInsights .mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.PerformanceInsights .infoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.PerformanceInsights .setInfoContainer{
+    display: flex;
+}
+.PerformanceInsights .yearlyStats{
+    display: flex;
+    flex-direction: column;
+}
+.PerformanceInsights .field{
+   width: 40%;
+    justify-self: flex-start;
+
+}
+.PerformanceInsights .value{
+    width: 100px;
+}
+.PerformanceInsights .yearlyStat{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-between;
+    width: 100%;
+}
+.PerformanceInsights .yearlySeparator{
+    margin: 30px;
+    width: 80%;
+}
+.PerformanceInsights .heading{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.PerformanceInsights .subHeading{
+    font-weight: 500;
+    font-size: 20px;
+    margin: 20px;
+}
+.PerformanceInsights .pies{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.PerformanceInsights .piwolabel{
+    position: relative;
+    width: 300px;   
+    overflow: hidden;
+}
+.bar{
+    background-color: rebeccapurple;
+}
+
+@media screen and (max-width:1100px) {
+    .PerformanceInsights .setInfoContainer{
+        flex-direction: column;
+        align-content: center;
+    }
+    .PerformanceInsights .pies{
+        flex-direction: row;
+    }
+    .PerformanceInsights .monthlyChart{
+        flex-direction: column-reverse;
+    }
+    .PerformanceInsights .infoContainer{
+        margin: 10px 0px;
+    }
+}

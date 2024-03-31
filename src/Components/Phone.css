@@ -1,0 +1,114 @@
+.mobileView{
+    flex:2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.mobileView .phone{
+    position: relative;
+    pointer-events: none;
+    width: min(30vw,40vh);
+}
+.mobileView .previewContent .statusBar{
+    background-color: #00aaff;
+    height: 4%;
+    width: 100%;
+}
+.mobileView .previewContent .mediaContainer{
+    height: 35%;
+    width: 101%;
+    background-color: aquamarine;
+    position: relative;
+    z-index: 0;
+}
+.mobileView .mediaContainer .photo{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+.mobileView .mediaContainer .video{
+    height: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: white;
+}
+.mobileView .mediaContainer .previewVideo{
+    position: relative;
+    object-fit: contain;
+    max-width: 100%;
+    height: 100%;
+}
+.mobileView .mediaContainer .previewBackground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: 0;
+}
+.mobileView .previewImage{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+.mobileView .content{
+    font-size: 80%;
+    text-align: left;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: white;
+    height: 58%;
+    display: flex;
+    flex-direction: column;
+}
+.mobileView .title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+}
+.mobileView .body{
+    max-height: 45%;
+    font-size: 90%;
+    text-wrap: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    overflow-wrap: anywhere;   
+}
+.mobileView .footer{
+    position: absolute;
+    bottom: 1%;
+    width: 90%;
+    align-self: center;
+}
+.mobileView .content .separator{
+    height: 1px;
+    width: 100%;
+    margin: 10px 0px;
+}
+.mobileView .publish{
+    background-color: #00aaff;
+}
+.mobileView .publishDetails{
+    font-size: 60%;
+}
+.mobileView .preview{
+    background-color: rgb(81, 179, 1);
+}
+.mobileView .content .previewFooterIcon{
+    margin-left: 10px;
+}
+.mobileView .content .userIcon{
+    margin-right: 10px;
+}
+@media screen and (max-width:850px) {
+    .mobileView .phone{
+        width: min(80vw,40vh);
+    }
+}

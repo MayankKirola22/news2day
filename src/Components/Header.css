@@ -1,0 +1,21 @@
+.Header{
+    background-color: #aaa;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 10;
+}
+.logo{
+    width: min(170px,15vw);
+    min-width: 100px;
+    margin: 0px 20px;
+}
+.user{
+    justify-content: center;
+    display: flex;
+    margin: 0px 20px;
+}

@@ -1,0 +1,81 @@
+.button{
+    color: white;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.button:disabled{
+    background-color: #555 !important;
+    color:#aaa;
+    transition-duration: 0.5s;
+}
+.loading{
+    width: 100%;
+    object-fit: contain;
+    justify-self: center;
+    align-self: center;
+    vertical-align:middle;
+}
+.separator{
+    height: 95%;
+    width: 1px;
+    background-color: black;
+    align-self: center;
+    justify-self: center;
+}
+.horizontal{
+    width: 100%;
+    height: 1px;
+}
+.metaContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.metaContainer .stats{
+    display: flex;
+}
+.metaContainer .info{
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.metaContainer .info .icon{
+    margin: 0px min(5px,0.1vw);
+}
+.metaContainer .info .specialIcon{
+    transform: rotate(-45deg);
+    position: relative;
+    bottom: 2px;
+}
+.metaContainer .timeContainer{
+    display: flex;
+    align-items: center;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+}
+.buttonContainer .classicBlue{
+    background-color: #00aaff;
+}
+.bold{
+    font-weight: 600;
+}
+.flex{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width:650px) {
+    .metaContainer{
+        flex-direction: column;
+        font-size: min(15px,3.5vw);
+    }
+    .metaContainer .timeContainer{
+        margin: 0px 5px;
+    }
+}

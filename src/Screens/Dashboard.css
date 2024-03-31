@@ -1,0 +1,95 @@
+.DashboardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.Dashboard .heading{
+    font-size: 30px;
+    font-weight: 500;
+}
+.Dashboard{
+    width: 100%;
+}
+.smallCards{
+    display: flex;
+}
+.cards{
+    display: flex;
+}
+.Dashboard .card{
+    border: 2px solid #00aaff;
+    height: 30vh;
+    width: 25vw;
+    margin: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #a8e2ff;
+    cursor: pointer;
+}
+.Dashboard .smallCard{
+    grid-area: "smallCard";
+    height: 20vh;
+    width: 25vw;
+    justify-content: flex-start;
+}
+.Dashboard .title{
+    font-size: 1.2rem;
+    margin: 20px 5px;
+}
+.Dashboard .smallCard .title{
+    font-size: 1rem;
+    margin: 20px 0px;
+}
+.Dashboard .smallCard .body{
+    text-align: left;
+    margin: 30px 20px;    
+    text-align: left;
+    width: 80%;
+}
+.Dashboard .body{
+    font-size: 0.8rem;
+}
+.Dashboard .smallCard .separator{
+    margin: -10px 20px;
+    background-color: #aaaaaa;
+    height: 1px;
+    width: 80%;
+    justify-self: first baseline;
+}
+@media screen and (max-width:800px) {
+    .DashboardContainer{
+        flex-direction: row;
+        padding: -20px;
+    }
+    .smallCards{
+        flex-direction: column;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .Dashboard .card{
+        height: 40vh;
+        width: 35vw;
+        margin: 30px;
+    }
+    .DashboardContainer{
+        height: auto;
+    }
+}
+@media screen and (max-width:600px) {
+    .DashboardContainer{
+        flex-direction: column;
+    }
+    .Dashboard .card{
+        width: 75vw;
+        margin: 30px;
+    }
+    .Dashboard .smallCard{
+        height: 20vh;
+    }
+}
